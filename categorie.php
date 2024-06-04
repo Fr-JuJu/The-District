@@ -10,18 +10,9 @@
     <title>The District</title>
 </head>
 <body>
-       <div class="nav">
-        <div class="menu"> </div>
-        <div class="logo">
-            <img src="./assets/img/images_the_district/logo-removebg-preview.png" width="30%">    
-        </div>
-        <div class="acpc">
-            <a href="./index.html" style="text-decoration: none;" >Accueil</a> 
-            <a href="./categorie.html" style="text-decoration: none;">Catégorie</a>  
-            <a href="./plats.html"style="text-decoration: none;" >Plats</a>
-            <a href="./form.html" style="text-decoration: none;" >Contact</a>
-        </div>
-      </div> 
+<?php
+    require_once('header.php')
+?>
       <img src="./assets/img/images_the_district/bg2.jpeg" width="100%">
             <div class="page">
         <div class="cat1">
@@ -84,13 +75,9 @@
           </div>
         </div>
         <br>
-        <div class="footer">
-          <div class="footer1">
-            <img src="./assets/img/Capture d’écran du 2024-04-11 13-49-52.png" width="95%">    </div>
-        <div class="res">
-            <img src="./assets/img/360_F_597445983_7n0977E825fXaLV7pguI88rDEEEATw9c-removebg-preview.png" width="25%">   
-        </div>
-      </div>
+        <?php
+    require_once('footer.php')
+?>
       <script src="./assets/js/button.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

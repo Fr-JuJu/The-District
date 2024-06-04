@@ -15,17 +15,17 @@
               <div class="row ">
             <div class="offcanvas-body ">
             <li class="offcanvas-item col-3 ">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
             </li>
             <li class="nav-item col-3 ">
-              <a class="nav-link " href="./categorie.html">Toutes les Catégories</a>
+              <a class="nav-link " href="./categorie.php">Toutes les Catégories</a>
             </li>
             <li class="nav-item dropdown col-4">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Catégorie
               </a>
               <ul class="dropdown-menu bg-dark navbar-dark">
-                <li><a class="dropdown-item" href="./asi.html">Asian Food</a></li>
+                <li><a class="dropdown-item" href="./asi.php">Asian Food</a></li>
                 <li><a class="dropdown-item" href="#">Burger</a></li>
                 <li><a class="dropdown-item" href="#">Pâte</a></li>
                 <li><a class="dropdown-item" href="#">Pizza</a></li>
@@ -40,7 +40,7 @@
               </ul>
             </li>
             <li class="nav-item col-2">
-              <a class="nav-link " href="#">Contact</a> 
+              <a class="nav-link " href="form.php">Contact</a> 
             </li>
           </ul>
             </div>
