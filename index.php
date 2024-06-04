@@ -171,14 +171,9 @@
           </div>
         </div>
       </div>
-        <div class="footer">
-            <img src="./assets/img/Capture d’écran du 2024-04-11 13-49-52.png" width="95%">    
-        </div>
-        <div class="res">
-          <a class="navbar-brand" href="#"><img src="./assets/img/images_the_district/logo-removebg-preview.png" width="20%"></a>
-            <img src="./assets/img/360_F_597445983_7n0977E825fXaLV7pguI88rDEEEATw9c-removebg-preview.png" width="25%">   
-        </div>
-      </div>
+      <?php
+    require_once('footer.php')
+?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

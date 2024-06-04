@@ -17,7 +17,7 @@
             <li class="offcanvas-item col-3 ">
               <a class="nav-link active" aria-current="page" href="#">Accueil</a>
             </li>
-            <li class="nav-item col-3 col-sm-5">
+            <li class="nav-item col-3 ">
               <a class="nav-link " href="./categorie.html">Toutes les Catégories</a>
             </li>
             <li class="nav-item dropdown col-4">
