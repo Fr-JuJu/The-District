@@ -34,6 +34,7 @@
           </div>
             <div class="page">
         <div class="cat1">
+          <a href="./asi.html"><p11>v Asian Food v</p11></a>
             <div class='carte1'>
                 <div class='info'>
                   <a href="./asi.html"><h1 class='titre'>Asian Food</h1></a>
@@ -42,7 +43,7 @@
               </div>    
         </div>
         <div class="cat2">
-            
+        <a href="#"><p11>v Nos Burger v</p11></a>
             <div class='carte2'>
                 <div class='info'>
                   <a href="./"><h1 class='titre'>Nos Burger</h1> </a>
@@ -52,6 +53,7 @@
 
         </div>
         <div class="cat3">
+        <a href="#"><p11>v Nos Pates v</p11></a>
             <div class='carte3'>
                 <div class='info'>
                   <a href="./"><h1 class='titre'>Nos Pâtes</h1></a>
@@ -60,7 +62,7 @@
               </div>      
         </div>
         <div class="cat4">
-          
+        <a href="#"><p11>v Nos Pizzas v</p11></a>
             <div class='carte4'>
               
                 <div class='info'>
@@ -70,6 +72,7 @@
               </div>      
         </div>
         <div class="cat5">
+        <a href="#"><p11>v Nos salade v</p11></a>
             <div class='carte5'>
                 <div class='info'>
                   <a href="./"><h1 class='titre'>Nos Salade</h1></a>
@@ -78,6 +81,7 @@
               </div>      
         </div>
         <div class="cat6">
+        <a href="#"><p11>v nos Wrap v</p11></a>
             <div class='carte6'>
                    <div class='info'>
                   <a href="./"><h1 class='titre'>Nos Wrap</h1></a>
@@ -171,9 +175,14 @@
           </div>
         </div>
       </div>
+      <div class="ffoter">
+        <div class="div1">
       <?php
     require_once('footer.php')
 ?>
+</div>
+</div>
+</div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

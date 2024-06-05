@@ -110,4 +110,12 @@ body{
         margin-top: 2%;
         height: 70%;
     }
+    @media screen and (max-width:1000px) {
+      .navbar-brand{
+        width: 75%;
+      }
+      p{
+        font-size: 45px;
+      }
+    }
     

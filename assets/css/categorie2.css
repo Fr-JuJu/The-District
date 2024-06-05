@@ -349,4 +349,7 @@ body{
   .acpc{
     font-size: 22px;
   }
+  .navbar-brand{
+    width: 75%;
+  }
 }
