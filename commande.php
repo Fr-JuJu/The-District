@@ -57,11 +57,13 @@
         </div>
         <div class="col-4 col-md-6">
           <label for="validationCustom03" class="form-label">Téléphone</label>
-          <input type="number" step="any" maxlength="10" name="tel" class="form-control"  id="validationCustom03" id="telephoneJS" required>
+          <input type="number" name="tel" class="form-control"  id="validationCustom03" id="telephoneJS" required >
           <div class="invalid-feedback">
             Ce Champ est obligatoire.
+ 
           </div>
         </div>
+        
         <div class="col-6 col-md-12 ">
             <label for="votreadresse" class="form-label">Votre demande</label>
             <textarea class="form-control" name="demande" rows="3" id="votreadresseJS" required></textarea>
