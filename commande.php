@@ -37,10 +37,10 @@
            <br><br><br><br>
           <div class="container">
             <div class="row">
-      <form class="row g-3 needs-validation" novalidate>
+      <form class="row g-3 needs-validation" action="script commande.php" method="post" novalidate>
         <div class="col-md-6 col-md-12 ">
           <label for="validationCustom01" class="form-label">Nom et Prénom</label>
-          <input type="text" class="form-control" id="validationCustom01" id="NomJS" required>
+          <input type="text" name="nom prenom" class="form-control" id="validationCustom01" id="NomJS" required>
           <div class="invalid-feedback">
             Ce Champ est obligatoire.
           </div>
@@ -48,7 +48,7 @@
         <div class="col-4 col-md-6">
           <label for="validationCustomUsername" class="form-label">Email</label>
           <div class="input-group has-validation">
-            <input type="text" class="form-control" id="validationCustomUsername" id="emailJS" aria-describedby="inputGroupPrepend" required>
+            <input type="email" name="Email" class="form-control" id="validationCustomUsername" id="emailJS" aria-describedby="inputGroupPrepend" required>
             
             <div class="invalid-feedback">
               Ce Champ est obligatoire.
@@ -57,14 +57,14 @@
         </div>
         <div class="col-4 col-md-6">
           <label for="validationCustom03" class="form-label">Téléphone</label>
-          <input type="text" class="form-control" maxlength="10" id="validationCustom03" id="telephoneJS" required>
+          <input type="number" step="any" maxlength="10" name="tel" class="form-control"  id="validationCustom03" id="telephoneJS" required>
           <div class="invalid-feedback">
             Ce Champ est obligatoire.
           </div>
         </div>
         <div class="col-6 col-md-12 ">
             <label for="votreadresse" class="form-label">Votre demande</label>
-            <textarea class="form-control" rows="3" id="votreadresseJS" required></textarea>
+            <textarea class="form-control" name="demande" rows="3" id="votreadresseJS" required></textarea>
           <div class="invalid-feedback">
             Ce Champ est obligatoire.
           </div>
