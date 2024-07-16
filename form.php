@@ -44,7 +44,7 @@
         </div>
         <div class="col-4 col-md-6">
           <label for="validationCustom03" class="form-label">Téléphone</label>
-          <input type="number" step="any" maxlength="10" name="tel" class="form-control" maxlength="10" id="validationCustom03" id="telephoneJS" required>
+          <input type="number" id="numberInput" oninput="limitCharacterLength(this, 10)" maxlength="10" step="any" name="tel" class="form-control" maxlength="10" id="validationCustom03" id="telephoneJS" required>
           <div class="invalid-feedback">
             Ce Champ est obligatoire.
           </div>

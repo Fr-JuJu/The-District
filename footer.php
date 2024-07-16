@@ -23,10 +23,7 @@
                                 class="img-fluid d-inline-block align-text-top" alt="navyt"></a>
                                 </li>
                                 <li class="nav-item">
-                        <a class="nav-link" href="" title="contact"><p class="text-white">Politique de confidentialité </p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./mentions.php" title="contact"> <p class="text-white">Mentions légales</p></a>
+                        <a class="nav-link" href="./mentions.php" title="contact"><p class="text-white">Politique de confidentialité et Mentions légales </p></a>
                     </li>
                 </ul>
                 
