@@ -14,7 +14,7 @@
 <?php
     require_once('header.php')
 ?>
-      <img src="./assets/img/images_the_district/bg1.jpeg" width="100%">
+      <img src="./assets/img/images_the_district/bg1.jpeg" width="100%" height="350px">
     
       <div class="tt">
       <p>Asian Food :</p></div>
@@ -83,6 +83,7 @@
 </div>
         <br>
         <br>
+        
         <?php
     require_once('footer.php')
 ?>

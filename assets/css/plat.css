@@ -11,56 +11,6 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-
-    .nav {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 0.3fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      position: fixed;
-      top: 0; right: 0; bottom: 0; left: 0;
-      object-fit: cover;
-      z-index: 1;
-      height: 20%;
-      } 
-    
-    .menu { grid-area: 1 / 1 / 2 / 4;
-        border:solid px rgb(0, 0, 0);
-        background: rgb(0, 0, 0);
-        margin-block-start: 0px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100%;
-    }
-    .logo { grid-area: 1 / 1 / 2 / 2;
-    margin-left: 8%;
-    }
-    .acpc { grid-area: 1 / 2 / 2 / 4;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 50%;
-    font-weight:bolder;
-    font-size: 50px;
-    font-family: cursive; 
-    }
-    .acpc a:link {
-        color: #BCA693;
-        }
-        .acpc a:visited {
-        color: #BCA693;
-        }
-    
-        .acpc a:hover {
-        color: #BCA693;
-        }
-        .acpc a:active {
-        color: #BCA693;
-        } 
-        
     .tt {
       color: #000000;
       font-size: 70px;

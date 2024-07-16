@@ -14,13 +14,16 @@
             <div class="container-fluid naav">
               <div class="row ">
             <div class="offcanvas-body ">
-            <li class="offcanvas-item col-3 ">
+            <li class="offcanvas-item col-1 ">
               <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
             </li>
             <li class="nav-item col-3 ">
               <a class="nav-link " href="./categorie.php">Toutes les Catégories</a>
             </li>
-            <li class="nav-item dropdown col-4">
+            <li class="nav-item col-3 ">
+              <a class="nav-link " href="./plats.php">Plats</a>
+            </li>
+            <li class="nav-item dropdown col-3">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Catégorie
               </a>

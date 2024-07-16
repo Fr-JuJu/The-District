@@ -14,6 +14,9 @@
 <?php
     require_once('header.php')
 ?>
+<?php
+    require_once('popup.php')
+?> 
    <div class="container-fluid vvd g-0">
             <nav class="navbar">        
             <div class="row ">
@@ -37,8 +40,8 @@
           <a href="./asi.html"><p11>v Asian Food v</p11></a>
             <div class='carte1'>
                 <div class='info'>
-                  <a href="./asi.html"><h1 class='titre'>Asian Food</h1></a>
-                  <a href="./asi.html"><p class='description'></p></a>
+                  <a href="./asi.php"><h1 class='titre'>Asian Food</h1></a>
+                  <a href="./asi.php"><p class='description'></p></a>
                 </div>
               </div>    
         </div>

@@ -13,7 +13,7 @@
 <?php
     require_once('header.php')
 ?>
-      <img src="./assets/img/images_the_district/bg1.jpeg" width="100%">
+      <img src="./assets/img/images_the_district/bg1.jpeg" width="100%" height="350px">
            <br><br><br><br>
           <div class="container">
             <div class="row">
