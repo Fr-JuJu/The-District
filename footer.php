@@ -36,5 +36,6 @@
     width: 70vw;
     display: flex;
     justify-content: center;
+    margin-top:35px;
     }
     </style>

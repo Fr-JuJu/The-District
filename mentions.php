@@ -90,7 +90,7 @@ The District
 <br>Téléphone : 06********
 <br>Email : ********@gmail.com</p>
 
-<a class="fixed-bottom mb-5" href="#"><img src="./assets/img/flèche1.png" width="6%"></a>
+<a class="fixed-bottom mb-5" href="#"><img src="./assets/img/flèche1.png" alt="Flèche" width="6%"></a>
 <footer>
 <?php
     require_once('footer.php')

@@ -1,3 +1,19 @@
+<?php
+session_start();
+$servername = "localhost";
+$username = "admin";
+$password = "Afpa1234";
+$dbname = "the_district";
+
+try {
+  $dbh = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  // configurer le mode d'erreur PDO pour générer des exceptions
+  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+  echo "Erreur de connexion à la base de données: " . $e->getMessage();
+}
+?> 
+
 <nav class="navbar navbar-expand-lg font-light bg-black navbar-dark">
       <div class="container-fluid bg-black navbar-dark">
         <a class="navbar-brand" href="#"><img src="./assets/img/images_the_district/logo-removebg-preview.png" width="30%"></a>

@@ -14,9 +14,6 @@
 <?php
     require_once('header.php')
 ?>
-<?php
-    require_once('popup.php')
-?> 
    <div class="container-fluid vvd g-0">
             <nav class="navbar">        
             <div class="row ">
@@ -35,8 +32,111 @@
       </div>
               
           </div>
+          <?php
+// récupère toutes les données de catégorie
+$stmt=$dbh->prepare("SELECT * FROM categorie WHERE active='Yes'");
+
+try{
+  // exécute de la requête SQL
+  $stmt->execute();
+} catch (PDOException $e){
+  // affiche un message d'erreur si la requête échoue
+  echo 'Erreur lors de l\'exécution de la requête : '. $e->getMessage();
+}
+
+// récupération des résultats de la requête
+$result=$stmt->fetchAll();
+?>
+ <div class="container">
+  <div class="row">
+          <?php
+// affichage des catégories dans une card bootstrap pour les 6 premières catégories
+  $i=0;
+        foreach($result as $row){
+            echo '<div class="col-sm-12 col-lg-4">
+              <a href="categorie.php"><p class="libellecard text-center"> '.$row['libelle'].'</p>
+                <img src="assets/img/images_the_district/category/'.$row['image'].'"class="carte1" alt="'.$row['libelle'].'" style="height:80%">
+                
+              </a>
+              </div>';
+              $i++;
+              if($i==6){
+                break;
+        }
+      }
+
+?>
+</div>
+</div>
+
             <div class="page">
-        <div class="cat1">
+        
+        <div class="para">
+
+
+        </div>
+        <div class="plat">
+        <div class="container">
+          <div class="row">
+        <?php
+            // Préparation de la requête SQL pour les plats les plus vendus
+         $stmt=$dbh->prepare("SELECT p.id,p.id_categorie,c.id_plat,SUM(quantite) as quantite_vendue,SUM(quantite)*prix as rentabilite,p.libelle,p.description,p.prix,p.image FROM commande c LEFT JOIN plat p ON c.id_plat=p.id WHERE c.etat!='Annulée' GROUP BY c.id_plat ORDER BY rentabilite DESC;");
+          
+          try{
+            // Exécution de la requête SQL du dessus
+            $stmt->execute();            
+          } catch (PDOException $e){
+            // Affichage d'un message d'erreur si la requête échoue
+            echo 'Erreur lors de l\'exécution de la requête : '. $e->getMessage();
+          }
+
+        // Récupération des résultats de la requête
+        $result=$stmt->fetchAll();
+        ?>
+        
+        <div class="platimg">
+          <div class="row">
+            <p class=" libelleplat fs-1 text-center fw-bolder text-decoration-underline text-black">Plat les plus vendus </p>
+       <?php
+       $i=0;
+        foreach($result as $row){
+          echo '<div class="col-sm-12 col-lg-4">
+              <a href="commande.php">
+                <img src="assets/img/food/'.$row['image'].'"class="plat" alt="'.$row['libelle'].'" style="height:80%">
+              </a>
+              </div>';
+              $i++;
+              if($i==3){
+                break;
+              }
+        }
+        ?>
+        </div>
+        </div>
+        </div>
+        </div>
+      <div class="ffoter">
+        <div class="div1">
+        </div>
+      </div>
+      </div>
+      </div>
+<?php
+    require_once('footer.php')
+?>
+
+</div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+<!--
+   <div class="cat1">
           <a href="./asi.html"><p11>v Asian Food v</p11></a>
             <div class='carte1'>
                 <div class='info'>
@@ -45,7 +145,7 @@
                 </div>
               </div>    
         </div>
-        <div class="cat2">
+<div class="cat2">
         <a href="#"><p11>v Nos Burger v</p11></a>
             <div class='carte2'>
                 <div class='info'>
@@ -91,101 +191,4 @@
                   <a href="./"><p class='description'></p></a>
                 </div>
               </div>      
-        </div>
-        <div class="para">
-
-
-        </div>
-        <div class="plat">
-        <div class="container">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" aria-label="Slide 16"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/food/buffalo-chicken.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/cesar_salad.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/cheesburger.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/courgettes_farcies.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/Food-Name-3461.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/Food-Name-3631.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/Food-Name-433.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/Food-Name-6340.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/Food-Name-8298.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/hamburger.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/lasagnes_viande.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/pizza-margherita.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/pizza-salmon.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/salad1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/spaghetti-legumes.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food/tagliatelles-saumon.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="ffoter">
-        <div class="div1">
-      <?php
-    require_once('footer.php')
-?>
-</div>
-</div>
-</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+        </div> -->
