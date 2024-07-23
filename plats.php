@@ -16,16 +16,43 @@
 ?> 
 
       <img src="./assets/img/images_the_district/bg1.jpeg" width="100%" height="350px">
-      <?php 
-      require_once('carteplat.php')
-      ?>
-        <br>
-        <div class="container-fluid">
-            <div class="row justify-content-between">
-            <button type="button" class="btn btn-dark  col-3 mt-5 p-2 rounded-pill" onclick="precedent()">Précédent</button>
-            <button type="button" class="btn btn-dark col-3 mt-5 p-2 rounded-pill" onclick="suivant()">Suivant</button>
-        </div>
-          </div>
+
+      <?php
+// récupère toutes les données de catégorie
+$stmt=$dbh->prepare("SELECT * FROM plat WHERE active='Yes'");
+
+try{
+  // exécute de la requête SQL
+  $stmt->execute();
+} catch (PDOException $e){
+  // affiche un message d'erreur si la requête échoue
+  echo 'Erreur lors de l\'exécution de la requête : '. $e->getMessage();
+}
+
+// récupération des résultats de la requête
+$result=$stmt->fetchAll();
+?>
+ <div class="container">
+  <div class="row">
+          <?php
+// affichage des catégories dans une card bootstrap pour les 6 premières catégories
+  $i=0;
+        foreach($result as $row){
+            echo '<div class="col-sm-12 col-lg-3">
+              <a href="categorie.php"><p class="libellecard text-center"> '.$row['libelle'].'</p>
+                <img src="assets/img/food/'.$row['image'].'"class="card" alt="'.$row['libelle'].'" style="height:25%">
+                
+              </a>
+              </div>';
+              $i++;
+              if($i==35){
+                break;
+        }
+      }
+
+?>
+    </div>
+    </div>
         <br>
         <?php
     require_once('footer.php')

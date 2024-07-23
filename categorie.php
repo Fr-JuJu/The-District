@@ -14,7 +14,12 @@
     require_once('header.php')
 ?>
       <img src="./assets/img/images_the_district/bg2.jpeg" height="380px" width="100%">
+      <div class="bordure"> <p class=""></p> </div>
+      <br>
+      <br>
             <div class="page">
+            <div class="container ">
+            <div class="row ">
             <?php
 // récupère toutes les données de catégorie
 $stmt=$dbh->prepare("SELECT * FROM categorie WHERE active='Yes'");
@@ -30,41 +35,27 @@ try{
 // récupération des résultats de la requête
 $result=$stmt->fetchAll();
 ?>
- <div class="container">
-  <div class="row">
           <?php
 // affichage des catégories dans une card bootstrap pour les 6 premières catégories
   $i=0;
         foreach($result as $row){
             echo '<div class="col-sm-12 col-lg-4">
               <a href="categorie.php"><p class="libellecard text-center"> '.$row['libelle'].'</p>
-                <img src="assets/img/images_the_district/category/'.$row['image'].'"class="carte1" alt="'.$row['libelle'].'" style="height:80%">
+                <img src="assets/img/images_the_district/category/'.$row['image'].'"class="carte1" alt="'.$row['libelle'].'" style="height:80%" width="100%">
                 
               </a>
               </div>';
               $i++;
-              if($i==6){
+              if($i==12){
                 break;
         }
       }
-
 ?>
 </div>
-</div>
-</div>
-</div>
-                  
-        </div>
-        <br>
-        <div class="container-fluid">
-            <div class="row justify-content-between">
-            <button type="button" class="btn btn-dark  col-3 mt-5 p-2 rounded-pill" onclick="precedent()">Précédent</button>
-            <button type="button" class="btn btn-dark col-3 mt-5 p-2 rounded-pill" onclick="suivant()">Suivant</button>
+    </div>       
         </div>
           </div>
-        </div>
-  
-        <br>
+            
         <?php
     require_once('footer.php')
 ?>
