@@ -1,1 +1,1 @@
-# The-District / SUEUR Julie / Developpeur FULLSTACK
+# The-District/SUEUR Julie/Developpeur FULLSTACK
