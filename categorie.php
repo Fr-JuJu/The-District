@@ -55,7 +55,8 @@ $result=$stmt->fetchAll();
     </div>       
         </div>
           </div>
-            
+            <div class="fleche"> 
+              <a href="#"><img src="assets/img/flèche1.png" class="position-fixed bottom-0 end-0" width="8%"></a> </div>
         <?php
     require_once('footer.php')
 ?>

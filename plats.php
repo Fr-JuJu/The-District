@@ -16,7 +16,7 @@
 ?> 
 
       <img src="./assets/img/images_the_district/bg1.jpeg" width="100%" height="350px">
-
+      <br><br><br>
       <?php
 // récupère toutes les données de catégorie
 $stmt=$dbh->prepare("SELECT * FROM plat WHERE active='Yes'");
@@ -38,11 +38,23 @@ $result=$stmt->fetchAll();
 // affichage des catégories dans une card bootstrap pour les 6 premières catégories
   $i=0;
         foreach($result as $row){
-            echo '<div class="col-sm-12 col-lg-3">
-              <a href="categorie.php"><p class="libellecard text-center"> '.$row['libelle'].'</p>
-                <img src="assets/img/food/'.$row['image'].'"class="card" alt="'.$row['libelle'].'" style="height:25%">
+            echo '<div class="card mb-3 col-sm-12 col-lg-3" style="max-width: 600px;">
+                  <div class="row g-0">
+                  <div class="imgg col-md-4">
+               <img src="assets/img/food/'.$row['image'].'"class="img-fluid rounded-start" alt="'.$row['libelle'].'" style="height:50%" width="100%">
+                 </div>
+                   <div class="col-md-8">
+                <div class="card-body">
+                 <h5 class="card-title fs-2 text fw-semibold text-black text-decoration-underline">'.$row['libelle'].'</h5>
+                  <p class="card-text fs-4 text text-black text-decoration-none"> '.$row['description'].'</p>
+                   <p class="card-text fs-3 fw-semibold text-black">Prix :<p class="fs-3 fw-semibold text-black"> '.$row['prix'].' €</p></p>
+                      <a href="#" class="btn fs-4">Commander</a>
+
                 
               </a>
+                 </div>
+    </div>
+              </div>
               </div>';
               $i++;
               if($i==35){
@@ -54,6 +66,8 @@ $result=$stmt->fetchAll();
     </div>
     </div>
         <br>
+        <div class="fleche"> 
+              <a href="#"><img src="assets/img/flèche1.png" class="position-fixed bottom-0 end-0" width="8%"></a> </div>
         <?php
     require_once('footer.php')
 ?>

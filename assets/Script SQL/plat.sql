@@ -68,7 +68,7 @@ VALUES ('33', 'Gin Tonic Gout Framboise', 'Le gin tonic framboise est une boisso
 
 INSERT INTO plat ( id, libelle, description, prix, image, id_categorie ,active)
 VALUES ('34', 'Ile Flottante', 'L île flottante est un dessert délicat composé de blancs d œufs montés en neige, pochés et flottant sur une crème anglaise onctueuse, souvent garnie de caramel liquide.',
-'5.90','il-flottante.jpg', '17', 'Yes');
+'5.90','ile-flottante.jpg', '17', 'Yes');
 
 INSERT INTO plat ( id, libelle, description, prix, image, id_categorie ,active)
 VALUES ('35', 'Canette d Oasis 33cl', 'Le plaisir d Oasis partout',
@@ -80,7 +80,7 @@ VALUES ('36', 'Plateau Fromage', 'Venez découvrir notre plateau varié de froma
 
 INSERT INTO plat ( id, libelle, description, prix, image, id_categorie ,active)
 VALUES ('37', 'Plateau Fromage à raclette', 'Pour une raclette réussite venez commander notre plateau de fromage à raclette',
-'13.50','plateau-fromage-raclette.jpg', '18', 'Yes');
+'13.50','plateau-fromage-raclette-.jpg', '18', 'Yes');
 
 INSERT INTO plat ( id, libelle, description, prix, image, id_categorie ,active)
 VALUES ('38', 'Canette de Red Bull 33cl', 'Le plaisir de Red Bull partout',
