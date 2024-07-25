@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/categorie.css">
-    <link rel="shortcut icon" type="image/png" href="./assets/img/images_the_district/the_district_brand/favicon.png">
-
-    <title>The District</title>
-</head>
-<body>
 <?php
     require_once('header.php')
 ?>
@@ -40,8 +28,8 @@ $result=$stmt->fetchAll();
   $i=0;
         foreach($result as $row){
             echo '<div class="col-sm-12 col-lg-4">
-              <a href="asi.php?catplat='.$row['id'].'"><p class="libellecard text-center"> '.$row['libelle'].'</p>
-                <img src="assets/img/images_the_district/category/'.$row['image'].'"class="carte1" alt="'.$row['libelle'].'" style="height:80%" width="100%">
+              <a href="asi.php?catplat='.$row['id'].'"><p class="libellecat text-center"> '.$row['libelle'].'</p>
+                <img src="assets/img/images_the_district/category/'.$row['image'].'"class="cartecat" alt="'.$row['libelle'].'" style="height:80%" width="100%">
                 
               </a>
               </div>';

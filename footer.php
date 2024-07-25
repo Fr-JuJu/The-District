@@ -18,11 +18,6 @@
                         src="./assets/img/images_the_district/the_district_brand/insta.png" width="22%"
                                 class="img-fluid d-inline-block align-text-top" alt="navx"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="contact"><img
-                        src="./assets/img/images_the_district/logo-removebg-preview.png" width="30%"
-                                class="img-fluid d-inline-block align-text-top" alt="navyt"></a>
-                                </li>
                                 <li class="nav-item">
                         <a class="nav-link" href="./mentions.php" title="contact"><p class="text-white">Politique de confidentialité et Mentions légales </p></a>
                     </li>

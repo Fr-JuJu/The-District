@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
-    <link rel="shortcut icon" type="image/png" href="./assets/img/images_the_district/the_district_brand/favicon.png">
-
-    <title>The District</title>
-</head>
-<body>
 <?php
     require_once('header.php')
 ?>
@@ -49,7 +37,7 @@ $stock=$_GET['bouton'];
                    <p class="card-text fs-3 fw-semibold text-black">Prix :<p class="fs-3 fw-semibold text-black"> '.$row['prix'].' €</p></p>
                    <div class="bbtn justify-content-end">
                 <p class="text-black fs-2">Quantité :</p>
-              <input class="input_style" type="number" tabindex="5" min="1" max="23" required>
+              <input class="input_style" type="number" oninput="limitCharacterLength(this, 2)" maxlength="2" tabindex="5" min="1" max="23" value="1"required>
             </div>
                     
                  </div>
@@ -135,6 +123,7 @@ $stock=$_GET['bouton'];
             </div>
           </div>
         </div>
+        <div class="terme col-12 d-flex justify-content-end"><a href="./condition.php"><h2>*Terme et condition</h2></a></div>
         <div class="col-12 d-flex justify-content-end">
           <button class="btn btn-dark" type="submit">Envoyer</button>
         </div>

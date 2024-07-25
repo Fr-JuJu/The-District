@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/categorie.css">
-    <link rel="shortcut icon" type="image/png" href="./assets/img/images_the_district/the_district_brand/favicon.png">
-
-    <title>The District</title>
-</head>
-<body>
 <?php
     require_once('header.php')
 ?>
@@ -58,7 +46,7 @@
         </div>
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <input class="form-check-input" type="checkbox" id="invalidCheck" required>
             <label class="form-check-label" for="invalidCheck">
                 Accepter les termes et conditions
             </label>
@@ -67,6 +55,7 @@
             </div>
           </div>
         </div>
+        <div class="terme col-12 d-flex justify-content-end"><a href="./condition.php"><h2>*Terme et condition</h2></a></div>
         <div class="col-12 d-flex justify-content-end">
           <button class="btn btn-dark" type="submit">Envoyer</button>
         </div>
@@ -76,7 +65,7 @@
     <br>
     <?php
     require_once('footer.php')
-?>
+    ?>
       <script src="./assets/js/Form.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

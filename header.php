@@ -13,6 +13,16 @@ try {
   echo "Erreur de connexion à la base de données: " . $e->getMessage();
 }
 ?> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/images_the_district/the_district_brand/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/accueil.css">
+</head>
+<body>
 
 <nav class="navbar navbar-expand-lg font-light bg-black navbar-dark">
       <div class="container-fluid bg-black navbar-dark">
@@ -72,3 +82,182 @@ font-family: cursive;
 }
 
     </style>
+
+<?php
+  switch ($_SERVER['REQUEST_URI']) { // Il s'agit d'une variable superglobale PHP qui renvoie l'URL actuelle de la requête.
+    case '/index.php':               // L'instruction switch est utilisée pour comparer l'URL actuelle avec une liste d'URL prédéfinies.
+      echo '<title>Accueil</title>';
+      break;                         // L'instruction break est utilisée pour quitter le bloc switch une fois qu'une correspondance est trouvée.
+    case '/plats.php':        // Pour chaque 'case', si l'URL actuelle correspond à l'URL spécifiée, le code à l'intérieur de ce 'case' sera exécuté. Dans ce cas, il définit le titre de la page Web à l'aide de l'instruction echo.
+      echo '<title>Plats</title>';
+      break;
+    case '/form.php':
+      echo '<title>Contact</title>';
+      break;
+    case '/categorie.php':
+      echo '<title>Catégories</title>';
+      break;
+    case '/asi.php':
+      echo '<title>Plats par catégories</title>';
+      break;
+    case '/commande.php':
+      echo '<title>Commande</title>';
+      break;
+    case '/condition.php';
+      echo '<title>Terme et condition</title>';
+      break;
+    case '/mentions.php';
+      echo '<title>Mentions légales</title>';
+      break;
+    case '/asi.php?catplat=4':
+      echo '<title>Pizzas</title>';
+      break;
+    case '/asi.php?catplat=5':
+      echo '<title>Burgers</title>';
+      break;
+    case '/asi.php?catplat=9':
+      echo '<title>Wraps</title>';
+      break;
+    case '/asi.php?catplat=10':
+      echo '<title>Pasta</title>';
+      break;
+    case '/asi.php?catplat=11':
+      echo '<title>Sandwiches</title>';
+      break;
+    case '/asi.php?catplat=12':
+      echo '<title>Asian Food</title>';
+      break;
+      case '/asi.php?catplat=13':
+        echo '<title>Salades</title>';
+        break;
+        case '/asi.php?catplat=14':
+          echo '<title>Veggie</title>';
+          break;
+          case '/asi.php?catplat=15':
+            echo '<title>Apéritif</title>';
+            break;
+            case '/asi.php?catplat=16':
+              echo '<title>Boisson</title>';
+              break;
+              case '/asi.php?catplat=17':
+                echo '<title>Dessert</title>';
+                break;
+                case '/asi.php?catplat=18':
+                  echo '<title>Fromage</title>';
+                  break;
+      case '/commande.php?bouton=4':
+        echo '<title>Commande</title>';
+        break;
+        case '/commande.php?bouton=5':
+          echo '<title>Commande</title>';
+          break;
+          case '/commande.php?bouton=6':
+            echo '<title>Commande</title>';
+            break;
+            case '/commande.php?bouton=7':
+              echo '<title>Commande</title>';
+              break;
+              case '/commande.php?bouton=8':
+                echo '<title>Commande</title>';
+                break;
+                case '/commande.php?bouton=9':
+                  echo '<title>Commande</title>';
+                  break;
+                  case '/commande.php?bouton=10':
+                    echo '<title>Commande</title>';
+                    break;
+                    case '/commande.php?bouton=11':
+                      echo '<title>Commande</title>';
+                      break;
+                      case '/commande.php?bouton=12':
+                        echo '<title>Commande</title>';
+                        break;
+                        case '/commande.php?bouton=13':
+                          echo '<title>Commande</title>';
+                          break;
+                          case '/commande.php?bouton=14':
+                            echo '<title>Commande</title>';
+                            break;
+                            case '/commande.php?bouton=15':
+                              echo '<title>Commande</title>';
+                              break;
+                              case '/commande.php?bouton=16':
+                                echo '<title>Commande</title>';
+                                break;
+                                case '/commande.php?bouton=17':
+                                  echo '<title>Commande</title>';
+                                  break;
+                                  case '/commande.php?bouton=18':
+                                    echo '<title>Commande</title>';
+                                    break;
+                                    case '/commande.php?bouton=19':
+                                      echo '<title>Commande</title>';
+                                      break;
+                                      case '/commande.php?bouton=20':
+                                        echo '<title>Commande</title>';
+                                        break;
+                                        case '/commande.php?bouton=21':
+                                          echo '<title>Commande</title>';
+                                          break;
+                                          case '/commande.php?bouton=22':
+                                            echo '<title>Commande</title>';
+                                            break;
+                                            case '/commande.php?bouton=23':
+                                              echo '<title>Commande</title>';
+                                              break;
+                                              case '/commande.php?bouton=24':
+                                                echo '<title>Commande</title>';
+                                                break;
+                                                case '/commande.php?bouton=25':
+                                                  echo '<title>Commande</title>';
+                                                  break;
+                                                  case '/commande.php?bouton=26':
+                                                    echo '<title>Commande</title>';
+                                                    break;
+                                                    case '/commande.php?bouton=27':
+                                                      echo '<title>Commande</title>';
+                                                      break;
+                                                      case '/commande.php?bouton=28':
+                                                        echo '<title>Commande</title>';
+                                                        break;
+                                                        case '/commande.php?bouton=29':
+                                                          echo '<title>Commande</title>';
+                                                          break;
+                                                          case '/commande.php?bouton=30':
+                                                            echo '<title>Commande</title>';
+                                                            break;
+                                                            case '/commande.php?bouton=31':
+                                                              echo '<title>Commande</title>';
+                                                              break;
+                                                              case '/commande.php?bouton=32':
+                                                                echo '<title>Commande</title>';
+                                                                break;
+                                                                case '/commande.php?bouton=33':
+                                                                  echo '<title>Commande</title>';
+                                                                  break;
+                                                                  case '/commande.php?bouton=34':
+                                                                    echo '<title>Commande</title>';
+                                                                    break;
+                                                                    case '/commande.php?bouton=35':
+                                                                      echo '<title>Commande</title>';
+                                                                      break;
+                                                                      case '/commande.php?bouton=36':
+                                                                        echo '<title>Commande</title>';
+                                                                        break;
+                                                                        case '/commande.php?bouton=37':
+                                                                          echo '<title>Commande</title>';
+                                                                          break;
+                                                                          case '/commande.php?bouton=38':
+                                                                            echo '<title>Commande</title>';
+                                                                            break;
+                                                                            case '/commande.php?bouton=39':
+                                                                              echo '<title>Commande</title>';
+                                                                              break;
+
+        
+
+
+    default:                        // Si l'URL actuelle ne correspond à aucune des URL spécifiées, le code du bloc par défaut sera exécuté, ce qui définit le titre sur "NoPage"
+      echo '<title>NoPage</title>';
+  }
+  ?>
