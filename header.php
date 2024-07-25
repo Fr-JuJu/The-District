@@ -30,7 +30,7 @@ try {
             <div class="container-fluid naav">
               <div class="row ">
             <div class="offcanvas-body ">
-            <li class="offcanvas-item col-1 ">
+            <li class="offcanvas-item col-3 ">
               <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
             </li>
             <li class="nav-item col-3 ">
@@ -39,26 +39,7 @@ try {
             <li class="nav-item col-3 ">
               <a class="nav-link " href="./plats.php">Plats</a>
             </li>
-            <li class="nav-item dropdown col-3">
-              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Catégorie
-              </a>
-              <ul class="dropdown-menu bg-dark navbar-dark">
-                <li><a class="dropdown-item" href="./asi.php">Asian Food</a></li>
-                <li><a class="dropdown-item" href="#">Burger</a></li>
-                <li><a class="dropdown-item" href="#">Pâte</a></li>
-                <li><a class="dropdown-item" href="#">Pizza</a></li>
-                <li><a class="dropdown-item" href="#">Salade</a></li>
-                <li><a class="dropdown-item" href="#">Wrap</a></li>
-                <li><a class="dropdown-item" href="#">Sandwich</a></li>
-                <li><a class="dropdown-item" href="#">Veggie</a></li>
-                <li><a class="dropdown-item" href="#">Apéritif</a></li>
-                <li><a class="dropdown-item" href="#">Boisson</a></li>
-                <li><a class="dropdown-item" href="#">Fromage</a></li>
-                <li><a class="dropdown-item" href="#">Dessert</a></li>
-              </ul>
-            </li>
-            <li class="nav-item col-2">
+            <li class="nav-item col-3">
               <a class="nav-link " href="form.php">Contact</a> 
             </li>
           </ul>

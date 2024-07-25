@@ -101,7 +101,7 @@ $result=$stmt->fetchAll();
        $i=0;
         foreach($result as $row){
           echo '<div class="col-sm-12 col-lg-4">
-              <a href="commande.php">
+              <a href="commande.php?bouton='.$row['id'].'">
                 <img src="assets/img/food/'.$row['image'].'"class="plat" alt="'.$row['libelle'].'" style="height:80%">
               </a>
               </div>';
@@ -121,8 +121,6 @@ $result=$stmt->fetchAll();
       </div>
       </div>
       </div>
-      <div class="fleche"> 
-      <a href="#"><img src="assets/img/flèche1.png" class="position-fixed bottom-0 end-0" width="8%"></a> </div>
 <?php
     require_once('footer.php')
 ?>

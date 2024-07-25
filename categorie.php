@@ -40,7 +40,7 @@ $result=$stmt->fetchAll();
   $i=0;
         foreach($result as $row){
             echo '<div class="col-sm-12 col-lg-4">
-              <a href="categorie.php"><p class="libellecard text-center"> '.$row['libelle'].'</p>
+              <a href="asi.php?catplat='.$row['id'].'"><p class="libellecard text-center"> '.$row['libelle'].'</p>
                 <img src="assets/img/images_the_district/category/'.$row['image'].'"class="carte1" alt="'.$row['libelle'].'" style="height:80%" width="100%">
                 
               </a>
@@ -55,8 +55,7 @@ $result=$stmt->fetchAll();
     </div>       
         </div>
           </div>
-            <div class="fleche"> 
-              <a href="#"><img src="assets/img/flèche1.png" class="position-fixed bottom-0 end-0" width="8%"></a> </div>
+
         <?php
     require_once('footer.php')
 ?>
