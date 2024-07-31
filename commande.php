@@ -25,7 +25,7 @@ $stock=$_GET['bouton'];
 // affichage des catégories dans une card bootstrap pour les 6 premières catégories
   $i=0;
         foreach($result as $row){
-            echo '<div class="card mb-3 col-sm-12 col-lg-3" style="max-width: 600px;">
+            echo '<div class="carr mb-3 col-sm-12 col-lg-3" style="max-width: 600px;">
                   <div class="row g-0">
                   <div class="imgg col-md-4">
                <img src="assets/img/food/'.$row['image'].'"class="img-fluid rounded-start" alt="'.$row['libelle'].'" style="height:50%" width="100%">

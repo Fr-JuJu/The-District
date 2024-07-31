@@ -1,6 +1,9 @@
 <?php
     require_once('header.php')
 ?>
+<?php
+require_once('popup.php')
+?>
    <div class="container-fluid vvd g-0">
             <nav class="navbar">        
             <div class="row ">

@@ -1,6 +1,6 @@
 <div id="popup" style="display: none;">
 <img src="./assets/img/cookies.png" width="100px" height="100px">
-  <h2>Ce site web utilise des Cookies</h2>
+  <p class="fs-2 fw-semibold">Ce site web utilise des Cookies</p>
   <p>Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relative aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site  avec nos partenaires de média sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.</p>
   <button id="close-popup" class="btn btn-dark  col-3 mt-5 p-2 rounded-pill">Refuser</button>
   <button id="close-popup" class="btn btn-dark  col-3 mt-5 p-2 rounded-pill">Autoriser tous les cookies</button>
